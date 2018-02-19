@@ -14,7 +14,11 @@ namespace TechJobsConsole
         public static List<Dictionary<string, string>> FindAll()
         {
             LoadData();
-            return AllJobs;
+
+            List<Dictionary<string, string>> allJobsCopy = new List<Dictionary<string, string>>();
+            allJobsCopy.AddRange(AllJobs);
+
+            return allJobsCopy;
         }
 
         /*
